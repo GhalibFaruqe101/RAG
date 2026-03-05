@@ -64,7 +64,7 @@ coverage.xml
 *.log
 
 # --- pre-commit ---
-.secrets.baseline
+# .secrets.baseline is intentionally tracked (it stores approved secret patterns)
 
 # --- Misc ---
 *.tmp
