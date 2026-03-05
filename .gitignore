@@ -1,0 +1,71 @@
+# ============================================================
+# .gitignore for LangRAG Python Project
+# ============================================================
+
+# --- Virtual Environments ---
+RAG/
+venv/
+.venv/
+env/
+ENV/
+
+# --- Python artifacts ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# --- Secrets & Environment ---
+.env
+.env.local
+.env.*.local
+secrets.yaml
+secrets.json
+*.key
+*.pem
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Vector Stores & Model Artifacts ---
+*.faiss
+*.pkl
+*.bin
+chroma_db/
+faiss_index/
+vectorstore/
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.log
+
+# --- pre-commit ---
+.secrets.baseline
+
+# --- Misc ---
+*.tmp
+*.bak
