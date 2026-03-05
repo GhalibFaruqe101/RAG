@@ -11,8 +11,8 @@ repos:
       - id: check-merge-conflict       # Catch unresolved merge conflicts
       - id: check-added-large-files    # Prevent large files (default: 500KB)
         args: ['--maxkb=500']
-      - id: detect-private-key         # 🔒 Catch accidental API key commits
-      - id: no-commit-to-branch        # 🔒 Prevent direct commits to main/master
+      - id: detect-private-key         # Catch accidental API key commits
+      - id: no-commit-to-branch        # Prevent direct commits to main/master
         args: ['--branch', 'main', '--branch', 'master']
 
   # Python code formatter (Black)
