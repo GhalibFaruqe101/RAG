@@ -33,6 +33,17 @@ secrets.json
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
+# --- Data Files (use cloud storage or Git LFS instead) ---
+Data/
+data/
+*.pdf
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+
 # --- Vector Stores & Model Artifacts ---
 *.faiss
 *.pkl
