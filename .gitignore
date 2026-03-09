@@ -21,7 +21,7 @@ build/
 *.whl
 
 # --- Secrets & Environment ---
-.env
+.env.RAG
 .env.local
 .env.*.local
 secrets.yaml
