@@ -1,7 +1,5 @@
-# ============================================================
-# .gitignore for LangRAG Python Project
-# ============================================================
 
+Data/
 # --- Virtual Environments ---
 RAG/
 venv/
@@ -23,7 +21,7 @@ build/
 *.whl
 
 # --- Secrets & Environment ---
-.env
+.env.RAG
 .env.local
 .env.*.local
 secrets.yaml
@@ -34,6 +32,17 @@ secrets.json
 # --- Jupyter ---
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+
+# --- Data Files (use cloud storage or Git LFS instead) ---
+Data/
+data/
+*.pdf
+*.csv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
 
 # --- Vector Stores & Model Artifacts ---
 *.faiss
@@ -64,7 +73,7 @@ coverage.xml
 *.log
 
 # --- pre-commit ---
-.secrets.baseline
+# .secrets.baseline is intentionally tracked (it stores approved secret patterns)
 
 # --- Misc ---
 *.tmp
