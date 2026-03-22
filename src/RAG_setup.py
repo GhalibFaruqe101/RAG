@@ -4,7 +4,6 @@ import re
 
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
-from langchain_classic.chains import LLMChain
 from langchain_community.document_loaders import DirectoryLoader
 from langchain_core.prompts import PromptTemplate
 from langchain_huggingface import HuggingFaceEmbeddings, HuggingFacePipeline
@@ -65,7 +64,8 @@ Context: {context}
 Question: {question}
 Answer:"""
     prompt = PromptTemplate(template=template, input_variables=["context", "question"])
-    qa_chain = LLMChain(llm=llm, prompt=prompt)
+
+    qa_chain = prompt | llm
     return qa_chain
 
 
