@@ -2,6 +2,7 @@ import asyncio
 import logging
 import os
 
+import RAG_sys
 from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import (
@@ -11,8 +12,6 @@ from telegram.ext import (
     MessageHandler,
     filters,
 )
-
-import RAG_sys
 
 os.environ["LANGCHAIN_TRACING_V2"] = "false"
 load_dotenv(".env.RAG")

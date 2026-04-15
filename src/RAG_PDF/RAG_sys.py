@@ -1,9 +1,8 @@
 import pickle
 
+import RAG_setup
 from langchain_chroma import Chroma
 from sentence_transformers import CrossEncoder
-
-import RAG_setup
 
 RAG_setup.setup_environment()
 
