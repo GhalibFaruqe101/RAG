@@ -115,7 +115,7 @@ def run_setup():
     setup_environment()
     embd = get_embeddings()
 
-    docs = load_documents("./Data")
+    docs = load_documents("./Data/Resume")
     cleaned_docs = cleaner_func(docs)
     cleaned_chunk = split_documents(cleaned_docs)
 
